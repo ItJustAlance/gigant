@@ -1,0 +1,977 @@
+.wrapper {
+
+}
+.lvl1 {
+  height: 100vh;
+  background: #747474;
+  margin-bottom: 150px;
+  @include qmd {
+    margin-bottom: 25px;
+  }
+}
+.lvl2 {
+  margin-bottom: 110px;
+  @include qxl {
+    margin-bottom: 60px;
+  }
+  .market {
+    &-select-menu {
+      display: none;
+      font-size: 14px;
+      color: #fff;
+      padding: 7px 0 7px 60px;
+      margin-bottom: 25px;
+      background: $clr-first-primary url(../img/menu-hamb.svg) 24px 50% no-repeat;
+      &.active {
+        background: $clr-first-primary url(../img/menu-close.svg) 24px 50% no-repeat;
+      }
+      @include qmd {
+        display: block;
+
+      }
+      
+    }
+    &-row {
+      display: flex;
+      @include qmd {
+        flex-wrap: wrap;
+      }
+    }
+    &-menu {
+      margin-right: 21px;
+      max-width: 340px;
+      width: 100%;
+      font-size: 18px;
+      font-family: $font-title;
+      @media (max-width: $mq_xl) {
+        font-size: 16px;
+        max-width: 300px;
+      }
+      @include qmd {
+        max-width: 100%;
+        margin-right: 0;
+        display: none;
+      }
+      &.active {
+        display: block;
+      }
+      li {
+        &+li {
+          margin-top: 10px;
+        }
+        svg {
+          fill: none;
+          stroke: #747894;
+          margin-right: 10px;
+          @media (max-width: $mq_xl) {
+            width: 22px;
+            height: 22px;
+          }
+        }
+        a {
+          color: $clr-font;
+          display: flex;
+          padding: 18px 10px 18px 16px;
+          align-items: center;
+          background: #F3F4FB;
+          
+          @media (max-width: $mq_xl) {
+            padding: 13px 16px;
+          }
+          &:hover {
+            background: $clr-first-primary;
+            color: #fff;
+            svg {
+              stroke: #fff;
+            }
+          }
+        }
+      }
+    }
+    &-list {
+      flex: 1 1 auto;
+      margin-right: -15px;
+      @include qmd {
+        margin: 0 -5px;
+      }
+      
+    }
+  }
+}
+.market {
+  &-row {
+  
+  }
+  &-menu {
+    @include qmd {
+      margin-bottom: 20px;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    @include qmd {
+      justify-content: center;
+    }
+    &-load {
+      text-align: center;
+      padding: 25px 0;
+      width: 100%;
+    }
+  }
+  &-item {
+    padding: 0 15px 25px;
+    width: 33.33%;
+    @include qxl {
+      padding: 0 10px 25px;
+    }
+    @include qmd {
+      width: 50%;
+      padding-left: 5px;
+      padding-right: 5px;
+      max-width: 350px;
+    }
+    @include qmd {
+      width: 100%;
+      font-size: 16px;
+    }
+    .img {
+      overflow: hidden;
+      position: relative;
+      max-height: 249px;
+      margin-bottom: 25px;
+      @include qmd {
+        margin-bottom: 5px;
+      }
+    }
+    .badgets {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      color: #fff;
+      @include qmd {
+        top: 10px;
+      }
+      li {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.3;
+        font-weight: 700;
+        @include qmd {
+          margin-bottom: 5px;
+          font-size: 10px;
+        }
+        span {
+          display: inline-block;
+          vertical-align: top;
+          background: $clr-first-primary;
+          padding: 1px 10px;
+        }
+        &.blue span {
+          background: #0097FE
+        }
+        &.pink span{
+          background: rgba(189, 69, 232, 0.8)
+        }
+      }
+    }
+    &__body {
+    
+    }
+    .articul {
+      color: #4B4D60;
+      opacity: .5;
+      padding-bottom: 8px;
+    }
+    .title {
+      padding-bottom: 10px;
+      font-family: $font-title;
+      font-weight: 500;
+      a {
+        color: $clr-font;
+        
+        &:hover {
+          color: $clr-first-primary;
+        }
+      }
+    }
+    .desc {
+      font-weight: 300;
+      @include qmd {
+        font-size: 12px;
+      }
+      @include qmd {
+        font-size: 14px;
+      }
+    }
+    &__bottom {
+      padding-top: 22px;
+      display: flex;
+      line-height: 1.2;
+      font-family: $font-title;
+      align-items: baseline;
+      @include qxl {
+        flex-wrap: wrap;
+      }
+      @include qmd {
+        padding-top: 15px;
+      }
+    }
+    .old-cost {
+      color: #333333;
+      text-decoration: line-through;
+      margin-right: 17px;
+      @include qxl {
+        margin: 0 0 5px;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    .cost {
+      margin-right: 17px;
+      color: $clr-first-primary;
+      font-weight: 700;
+      font-size: 24px;
+      @media (max-width: $mq_xl) {
+        font-size: 18px;
+      }
+      @include qxl {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+      }
+      &-black {
+        color: #333;
+      }
+    }
+    &__bottom {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &-wrapper {
+  
+  }
+}
+
+.lvl3 {
+  
+  .title-fz {
+    display: flex;
+    align-items: center;
+    padding: 0 120px 30px;
+    @include qxl {
+      padding: 0 0 10px;
+      flex-wrap: wrap;
+    }
+    .title {
+      color: $clr-first-primary;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.3;
+      width: 60%;
+      max-width: 460px;
+      margin-right: 50px;
+      font-family: $font-title;
+      padding-bottom: 30px;
+      @include qxl {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+    }
+    .text {
+      font-size: 18px;
+      padding-bottom: 30px;
+      @include qxl {
+        font-size: 14px;
+        font-style: italic;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+.hunter {
+  &-list {
+    display: flex;
+    margin: 0 -22px;
+    padding: 0 120px 55px;
+    @include qxl {
+      padding: 0 0 55px;
+      margin: 0 -10px;
+    }
+    @include qmd {
+      flex-wrap: wrap;
+    }
+  }
+  &-item {
+    width: 33.33%;
+    @include qmd {
+      width: 100%;
+    }
+    .img {
+      padding-bottom: 40px;
+      @include qxl {
+        padding-bottom: 20px;
+      }
+      @include qmd {
+        padding-bottom: 10px;
+      }
+    }
+    .ic {
+      background: $clr-first-primary;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include qmd {
+        width: 30px;
+        height: 30px;
+      }
+      
+      svg {
+        fill: none;
+        @include qmd {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: $font-title;
+      padding-bottom: 20px;
+      @include qxl {
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+    }
+    .text {
+      font-weight: 300;
+    }
+  }
+  
+  &-wrap {
+    padding: 0 22px 25px;
+    @include qxl {
+      padding: 10px 15px 20px;
+    }
+  }
+}
+
+.lvl4 {
+  padding-bottom: 120px;
+  @include qmd {
+    padding-bottom: 60px;
+  }
+}
+
+.banner-consul {
+  background: rgba(179, 188, 229, 0.16);
+  padding: 65px 120px;
+  display: flex;
+  align-items: center;
+  @include qxl {
+    padding: 30px 20px;
+  }
+  @include qmd {
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-family: $font-title;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-right: 50px;
+    @include qxl {
+      font-size: 24px;
+    }
+    @include qmd {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+  }
+  &__btn {
+    width: 50%;
+    max-width: 365px;
+    @include qmd {
+      width: 100%;
+      max-width: 100%;
+    }
+    .btn {
+      width: 100%;
+      text-align: center;
+      padding: 24px;
+      @include qxl {
+        padding: 18px;
+      }
+      @include qmd {
+        padding: 11px
+      }
+    }
+  }
+}
+
+.lvl5 {
+  padding-bottom: 100px;
+  @include qmd {
+    padding-bottom: 30px;
+  }
+  .wrapper {
+    padding: 0 135px;
+    @include qxl {
+      padding: 0 20px;
+    }
+  }
+}
+.about {
+  &-up {
+    position: relative;
+    max-width: 505px;
+    width: 80%;
+    color: #fff;
+    padding: 63px 0 70px;
+    @include qxl {
+      padding: 30px 0 50px;
+    }
+    @include qmd {
+      width: 100%;
+      padding-bottom: 75px;
+    }
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -185px;
+      width: 1000px;
+      height: 100%;
+      z-index: -1;
+      background: $clr-first-primary;
+      content: "";
+    }
+    .title {
+      font-size: 45px;
+      font-family: $font-title;
+      padding-bottom: 45px;
+      font-weight: 700;
+      @include qxl {
+        font-size: 30px;
+        padding-bottom: 15px;
+      }
+      @include qmd {
+        padding-bottom: 18px;
+      }
+    }
+    .text {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+  &-info {
+    position: relative;
+    padding: 55px 0 0;
+    @include qmd {
+      flex-wrap: wrap;
+      display: flex;
+    }
+  }
+  &-list {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 38%;
+    @include qxl {
+      width: 50%
+    }
+    @include qmd {
+      width: 100%;
+      order: 1;
+    }
+    li {
+      margin: 0 0 40px;
+      position: relative;
+      padding-left: 45px;
+      @include qmd {
+        font-size: 16px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      &:after {
+        width: 23px;
+        height: 2px;
+        background: $clr-first-primary;
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 0;
+        @include qxl {
+          top: 9px;
+        }
+        @include qmd {
+          left: -3px;
+          width: 12px;
+        }
+      }
+    }
+  }
+  &-img {
+    position: absolute;
+    top: -55px;
+    right: -120px;
+    width: 64%;
+    @include qxl {
+      top: 40px;
+      width: 50%;
+      right: -70px;
+    }
+    @include qmd {
+      position: relative;
+      top: -100px;
+      right: -20px;
+      width: 100%;
+      order: 0;
+      margin-bottom: -70px;
+    }
+  }
+}
+
+.lvl6 {
+  padding-bottom: 120px;
+  @include qmd {
+    padding-bottom: 60px;
+  }
+  .wrapper {
+    padding: 0 135px;
+    @include qxl {
+      padding: 0 10px;
+    }
+  }
+  .h1 {
+    margin-bottom: 50px;
+    color: #333;
+    @include qxl {
+      margin-bottom: 30px;
+    }
+  }
+}
+.slider-project {
+  position: relative;
+  margin: 0 -20px;
+  @include qxl {
+    margin: 0 30px;
+    .slide {
+      padding: 0 10px;
+    }
+  }
+  
+  .arr-left, .arr-right {
+    cursor: pointer;
+    fill: none;
+    stroke: #B1B1D3;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: -46px;
+    @include qxl {
+      left: -20px;
+    }
+    svg {
+      fill: none;
+      width: 16px;
+      height: 32px;
+    }
+  }
+  .arr-right {
+    left: auto;
+    right: -20px;
+    @include qxl {
+      left: auto;
+      right: -20px;
+    }
+  }
+}
+
+.project-item, .news-item {
+  max-width: 370px;
+  margin: 0 auto;
+  .img {
+    margin-bottom: 30px;
+    @include qxl {
+      margin-bottom: 15px;
+    }
+  }
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+    font-family: $font-title;
+    padding-bottom: 26px;
+    line-height: 1.3;
+    @include qxl {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    @include qmd {
+      font-size: 16px;
+    }
+    a {
+      
+      color: inherit;
+      &:hover {
+        color: $clr-first-primary;
+      }
+    }
+  }
+  .text {
+    color: #2B2A29;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    @include qmd {
+      padding-bottom: 10px;
+    }
+  }
+  .date {
+    color: #2B2A29;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: .5;
+    @include qxl {
+      font-size: 14px;
+    }
+  }
+  .link-more {
+    a {
+      display: inline-flex;
+      vertical-align: top;
+      color: #A0A0B8;
+      
+      align-items: center;
+      svg {
+        margin-left: 10px;
+        width: 20px;
+        height: 12px;
+      }
+      &:hover {
+        color: $clr-first-primary;
+        svg {
+        
+        }
+      }
+    }
+  }
+}
+.list-news {
+  display: flex;
+  margin: 0 -22px;
+  flex-wrap: wrap;
+  @include qmd {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  &--inside {
+    @include qxl {
+      margin: 0 -10px;
+    }
+    .news-item {
+      padding-bottom: 50px;
+      @include qlg {
+        width: 50%;
+      }
+    }
+  }
+}
+.news-item {
+  padding: 0 22px 30px;
+  width: 33.33%;
+  max-width: 414px;
+  @include qxl {
+    padding: 0 10px 15px;
+    
+  }
+  @include qmd {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .title {
+    line-height: 1.1;
+  }
+}
+.lvl7 {
+  padding-bottom: 160px;
+  @include qxl {
+    padding-bottom: 60px;
+  }
+  @include qmd {
+    padding-bottom: 40px;
+  }
+  .wrapper {
+    padding: 0 135px;
+    @include qxl {
+      padding: 0 10px;
+    }
+  }
+}
+.director-info {
+  position: relative;
+  display: flex;
+  width: 100%;
+  @include qmd {
+    flex-wrap: wrap;
+  }
+  .img {
+    margin-right: -40px;
+    flex: 0 0 369px;
+    @include qmd {
+      flex: 0 0 60%;
+    }
+  }
+  .b-text {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-end;
+    @include qmd {
+      margin-left: 13%;
+      margin-top: -15%;
+    }
+    .text {
+      padding-bottom: 15px;
+    }
+    .blockquote {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      padding: 60px 54px;
+      background: $clr-first-primary;
+      color: #fff;
+      margin-bottom: 40px;
+      @include qmd {
+        padding: 20px;
+      }
+    }
+    .signature {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 1.3;
+      font-family: $font-title;
+      text-align: right;
+      max-width: 70%;
+      @include qxl {
+        max-width: 100%;
+      }
+      @include qmd {
+        font-size: 14px;
+      }
+      strong {
+        display: block;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.lvl8 {
+  padding-bottom: 140px;
+  @include qxl {
+    padding-bottom: 60px;
+  }
+  .wrapper {
+    padding: 0 135px;
+    @include qxl {
+      padding: 0 10px;
+    }
+  }
+  .h1 {
+    padding-bottom: 70px;
+    @include qxl {
+      padding-bottom: 40px;
+    }
+    @include qmd {
+      padding-bottom: 20px;
+    }
+  }
+}
+.slider-part {
+  position: relative;
+  @include qxl {
+    margin: 0 25px;
+  }
+  .slide {
+    vertical-align: top;
+  }
+  .arr-left, .arr-right {
+    cursor: pointer;
+    fill: none;
+    stroke: #B1B1D3;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: -46px;
+    @include qxl {
+      left: -20px;
+    }
+    svg {
+      fill: none;
+      width: 16px;
+      height: 32px;
+    }
+  }
+  .arr-right {
+    left: auto;
+    right: -46px;
+    @include qxl {
+      left: auto;
+      right: -20px;
+    }
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-slide {
+    padding: 0 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include qmd {
+      padding-left: 10px;
+    }
+    img {
+      opacity: .2;
+      // transition: all 0.3s linear;
+    }
+    a:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+.lvl9 {
+  padding-bottom: 60px;
+  @include qxl {
+    padding-bottom: 30px;
+  }
+  .wrapper {
+    padding: 0 135px;
+    @include qxl {
+      padding: 0 10px;
+    }
+  }
+}
+.title-box {
+  display: flex;
+  padding-bottom: 30px;
+  align-items: baseline;
+  .h1 {
+    padding-bottom: 20px;
+  }
+  .b-right {
+    margin-left: auto;
+    a {
+      @include qmd {
+        color: $clr-first-primary;
+      }
+    }
+    
+  }
+}
+.lvl10 {
+  padding-bottom: 120px;
+  @include qxl {
+    padding-bottom: 40px;
+  }
+  
+}
+.form-learn-more {
+  background: url(../img/bg-form.png) 50% 50% no-repeat;
+  color: #fff;
+  padding: 97px 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  @include qxl {
+    padding: 30px 40px;
+    margin: 0 -10px;
+    width: auto;
+  }
+  @include qmd {
+    flex-wrap: wrap;
+    padding: 20px;
+    background-size: cover;
+  }
+  &__text {
+    flex: 1 1 auto;
+    margin-right: 50px;
+    @include qmd {
+      margin: 0 0 30px;
+      width: 100%;
+    }
+    .title {
+      font-size: 45px;
+      font-weight: 700;
+      font-family: $font-title;
+      line-height: 1.1;
+      padding-bottom: 80px;
+      @include qxl {
+        font-size: 40px;
+        padding-bottom: 50px;
+      }
+      @include qmd {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+    }
+    .text {
+      font-size: 20px;
+      font-weight: 300;
+      max-width: 463px;
+      @include qxl {
+        font-size: 18px;
+      }
+      @include qmd {
+        font-size: 14px;
+      }
+    }
+  }
+  &__form {
+    width: 50%;
+    max-width: 450px;
+    @include qmd {
+      width: 100%;
+      
+    }
+    .form-bottom {
+      display: flex;
+      @include qxl {
+        flex-wrap: wrap;
+      }
+    }
+    .text-soglasie {
+      flex: 1 1 auto;
+      margin-right: 20px;
+      a {
+        color: inherit;
+      }
+      @include qxl {
+        margin: 0 0 10px;
+        width: 100%;
+      }
+    }
+    .b-btn {
+      .btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.3;
+        font-family: $font-stack;
+      }
+    }
+  }
+  
+}

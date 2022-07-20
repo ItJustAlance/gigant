@@ -1,0 +1,175 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header-inside.html').default)(data) %>
+
+<main class="main">
+  <div class="wrapper wrapper--inside content-wrapper">
+    <section class="content">
+      <ul class="crumbs">
+        <li class="crumbs-item"><a href="">Главная</a></li>
+        <li class="crumbs-item"><span>Новости</span></li>
+      </ul>
+      <div class="box-h-title">
+        <h1 class="h1">Новости компании</h1>
+      </div>
+      <div class="box-filter">
+        <ul class="tags-listing">
+          <li class="tag-item"><a class="tag-item__link" href="">Облачные технологии</a></li>
+          <li class="tag-item"><a class="tag-item__link" href="">IaaS</a></li>
+          <li class="tag-item"><a class="tag-item__link" href="">Cloud Health</a></li>
+          <li class="tag-item"><a class="tag-item__link" href="">Проектная разработка</a></li>
+        </ul>
+        <div class="b-sorting">
+          <div class="b-sorting__title">
+            Сортировать:
+          </div>
+          <div class="b-sorting__select">
+            <div class="b-dropdown">
+              <label class="b-dropdown__title js-drop-btn">Сначала новые</label>
+              <div class="b-dropdown__dropdown">
+                <ul class="b-dropdown__list">
+                  <li><a href="" class="drop-item">Сначала новые</a></li>
+                  <li><a href="" class="drop-item">Сначала старые</a></li>
+                  <li><a href="" class="drop-item">Сначала непонятные</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end b-filter -->
+      <div class="list-news list-news--inside">
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Знания.
+            </a></div>
+            <div class="text">
+              Знания. В нашей инженеры, с подтверждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Заголовок новости
+            </a></div>
+            <div class="text">
+              Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news-def.png" alt=""></a></div>
+            <div class="title"><a href="#">Длинный заголовок новости в две строки
+            </a></div>
+            <div class="text">
+              Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Знания.
+            </a></div>
+            <div class="text">
+              Знания. В нашей команде работаями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Заголовок новости
+            </a></div>
+            <div class="text">
+              Знания. В нашей еры, с подтверждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Длинный заголовок новости в две строки
+            </a></div>
+            <div class="text">
+              Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Знания.
+            </a></div>
+            <div class="text">
+              Знания. В нашей команде работают выскокорждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Заголовок новости
+            </a></div>
+            <div class="text">
+              Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+        <div class="news-item">
+          <div class="news-wrapper">
+            <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+            <div class="title"><a href="#">Длинный заголовок новости в две строки
+            </a></div>
+            <div class="text">
+              Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+            </div>
+            <div class="date">12 мая 2022</div>
+          </div>
+        </div><!--end news-item -->
+      </div><!--end list-news -->
+      <div class="list-load-more">
+        <a href="#" class="btn btn--second">Загрузить еще</a>
+      </div>
+      <div class="b-pagination">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a href="" class="pagination-link">
+              <svg class="svg">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="pagination-item"><a href="" class="pagination-link">1</a></li>
+          <li class="pagination-item"><a href="" class="pagination-link">2</a></li>
+          <li class="pagination-item"><a href="" class="pagination-link active">3</a></li>
+          <li class="pagination-item"><a href="" class="pagination-link">4</a></li>
+          <li class="pagination-item"><a href="" class="pagination-link">5</a></li>
+          <li class="pagination-item">
+            <a href="" class="pagination-link">
+              <svg class="svg">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

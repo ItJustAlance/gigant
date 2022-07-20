@@ -1,0 +1,154 @@
+.footer {
+  background: #182033;
+  margin: 0;
+  padding: 60px 0 50px;
+  color: #fff;
+  font-family: $font-title;
+  @include qxs {
+    padding: 30px 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      opacity: .8;
+      text-decoration: underline;
+    }
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .foot {
+    &-left {
+      width: 33.33%;
+      flex: 0 0 33.33%;
+      margin-right: 45px;
+      display: flex;
+      @include qxs {
+        width: 60%;
+        flex: 0 0 60%;
+      }
+      @include qlg {
+        width: 100%;
+        flex: 0 0 100%;
+        align-items: center;
+        margin: 0;
+      }
+    }
+    &-center {
+      width: 30%;
+      flex: 0 0 30%;
+      @include qxs {
+        width: 40%;
+        flex: 0 0 40%;
+      }
+      @include qlg {
+        width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+    }
+    &-right {
+      margin-left: auto;
+      text-align: right;
+      @include qxl {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+      }
+    }
+    &-top {
+      display: flex;
+      @include qlg {
+        flex-wrap: wrap;
+      }
+
+    }
+    &-bottom {
+      display: flex;
+      padding-top: 30px;
+      @include qlg {
+        flex-wrap: wrap;
+        padding-top: 10px;
+      }
+      .foot-left {
+        align-items: flex-end;
+        @include qlg {
+          justify-content: center;
+          padding-bottom: 15px;
+        }
+      }
+      .foot-right {
+        display: flex;
+        align-items: flex-end;
+        @include qlg {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+    &-menu {
+      width: 100%;
+      display: flex;
+      
+      flex-wrap: wrap;
+      &__list {
+        width: 50%;
+        @include qlg {
+          text-align: center;
+        }
+        @include qmd {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      li {
+        margin-bottom: 10px;
+        
+      }
+    }
+    &-phone {
+      margin-bottom: 10px;
+      font-size: 18px;
+      @include qmd {
+        margin-bottom: 20px;
+      }
+    }
+    &-mail {
+      font-size: 16px;
+    }
+    &-design {
+      .title {
+        margin-bottom: 10px;
+      }
+    }
+    &-socs {
+      @include qmd {
+        text-align: center;
+        width: 100%
+      }
+      .item {
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: top;
+        @include qlg {
+          margin-left: 0;
+          margin-right: 30px;
+        }
+        @include qmd {
+          margin: 0 15px;
+        }
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+  }
+}
+

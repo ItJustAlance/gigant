@@ -1,0 +1,460 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="lvl1">
+  <div class="wrapper">
+    СЛАЙЙДЕР
+  </div><!-- /.wrapper -->
+</div><!-- /.lvl1 -->
+<div class="lvl2">
+  <div class="wrapper js-market-menu-wrapper">
+    <div class="market-select-menu js-market-menu-button">
+      Каталог товартов
+    </div>
+    <div class="market-row">
+      <ul class="market-menu js-market-menu__menu">
+        <li>
+          <a href="#">
+            <svg class="svg">
+              <use xlink:href="img/sprite.svg#ic-monitor"></use>
+            </svg>
+            Конфигуратор ПК
+          </a>
+        </li>
+        <li><a href="#">
+          <svg class="svg">
+            <use xlink:href="img/sprite.svg#ic-monitor"></use>
+          </svg>
+          Подбор батарей для ИБП</a></li>
+        <li><a href="#">
+          <svg class="svg">
+            <use xlink:href="img/sprite.svg#ic-monitor"></use>
+          </svg>
+          Расходные материалы</a></li>
+        <li><a href="#">
+          <svg class="svg">
+            <use xlink:href="img/sprite.svg#ic-monitor"></use>
+          </svg>
+          Видеонаблюдение в квартиру</a></li>
+        <li><a href="#">
+          <svg class="svg">
+            <use xlink:href="img/sprite.svg#ic-monitor"></use>
+          </svg>
+          Конфигуратор кабель-каналов</a></li>
+        <li><a href="#">
+          <svg class="svg">
+            <use xlink:href="img/sprite.svg#ic-pause"></use>
+          </svg>
+          Подбор разеток и выключателей</a></li>
+        <li><a href="#">
+          <svg class="svg">
+            <use xlink:href="img/sprite.svg#ic-monitor"></use>
+          </svg>
+          Другие конфигураторы</a></li>
+      </ul>
+      <div class="market-list">
+        <div class="market-item">
+          <div class="market-wrap">
+            <div class="img">
+              <a href="#"> <img src="img/market-item.png" alt=""></a>
+              <ul class="badgets">
+                <li><span>Хит</span></li>
+                <li class="blue"><span>новинка</span></li>
+                <li class="pink"><span>Скидка 10%</span></li>
+              </ul>
+            </div>
+            <div class="market-item__body">
+              <div class="articul">Арт. 1112234</div>
+              <div class="title"><a href="">Разнообразный и богатый опыт </a></div>
+              <div class="desc">Знания. В нашей команде работают выскоко- квалифицированные инженеры</div>
+            </div>
+            <div class="market-item__bottom">
+              <div class="old-cost">32 985 ₽</div>
+              <div class="cost">32 985 ₽</div>
+            </div>
+          </div><!-- /.market-wrap -->
+        </div><!-- /.market-item -->
+        <div class="market-item">
+          <div class="market-wrap">
+            <div class="img"><a href=""><img src="img/market-item.png" alt=""></a></div>
+            <div class="market-item__body">
+              <div class="articul">Арт. 1112234</div>
+              <div class="title"><a href="">Разнообразный и богатый опыт </a></div>
+              <div class="desc">Знания. В нашей команде работают выскоко- квалифицированные инженеры</div>
+            </div>
+            <div class="market-item__bottom">
+              <div class="old-cost">32 985 ₽</div>
+              <div class="cost">32 985 ₽</div>
+            </div>
+          </div><!-- /.market-wrap -->
+        </div><!-- /.market-item -->
+        <div class="market-item">
+          <div class="market-wrap">
+            <div class="img"><a href=""><img src="img/market-item.png" alt=""></a></div>
+            <div class="market-item__body">
+              <div class="articul">Арт. 1112234</div>
+              <div class="title"><a href="">Разнообразный и богатый опыт </a></div>
+              <div class="desc">Знания. В нашей команде работают выскоко- квалифицированные инженеры</div>
+            </div>
+            <div class="market-item__bottom">
+              <div class="cost cost-black">32 985 ₽</div>
+            </div>
+          </div><!-- /.market-wrap -->
+        </div><!-- /.market-item -->
+        <div class="market-list-load">
+          <a href="#" class="btn btn--second">Загрузить еще</a>
+        </div>
+      </div>
+    </div><!--end market-row -->
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl2 -->
+<div class="lvl3">
+  <div class="wrapper">
+    <div class="title-fz">
+      <div class="title">
+        Для кого мы работаем? ФЗ - 44.223
+      </div>
+      <div class="text">Наше предложение подойдёт крупным и средним коммерческим и государственным организациям, стремящимся к инновациям.</div>
+    </div>
+    <div class="hunter-list">
+      <div class="hunter-item">
+        <div class="hunter-wrap">
+          <div class="img">
+            <div class="ic">
+              <svg class="svg">
+                <use xlink:href="img/sprite.svg#ic-mic"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="title">Enterprise-сегмент</div>
+          <div class="text">Обеспечьте себя надёжным партнёром для реализации масштабных ИТ-проектов, включая проектирование, поставки оборудования и ПО, настройку и техническое сопровождение.</div>
+        </div>
+      </div><!--end hunter-item -->
+      <div class="hunter-item">
+        <div class="hunter-wrap">
+          <div class="img">
+            <div class="ic">
+              <svg class="svg">
+                <use xlink:href="img/sprite.svg#ic-portfel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="title">Крупный и средний бизнес</div>
+          <div class="text">Закрывайте потребности обеспечения сотрудников всей необходимой техникой в короткие сроки с гарантией и поддержкой на всех этапах.</div>
+        </div>
+      </div><!--end hunter-item -->
+      <div class="hunter-item">
+        <div class="hunter-wrap">
+          <div class="img">
+            <div class="ic">
+              <svg class="svg">
+                <use xlink:href="img/sprite.svg#ic-gosdumma"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="title">Государственные учреждения</div>
+          <div class="text">Реализуйте государтсвенные контракты с надёжным поставщиком. Мы обеспечим полоное соотвествие поставок законодательству в области закупок и гарантируем оптимальный результат в заданных условиях.</div>
+        </div>
+      </div><!--end hunter-item -->
+    </div><!--end hunter-list -->
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl3 -->
+<div class="lvl4">
+  <div class="wrapper">
+    <div class="banner-consul">
+      <div class="banner-consul__title">Занимайтесь бизнесом — а мы сделаем все остальное!</div>
+      <div class="banner-consul__btn"><a href="#" class="btn">Запросить консультацию</a></div>
+    </div>
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl4 -->
+<div class="lvl5">
+  <div class="wrapper">
+    <div class="about-up">
+      <div class="title">Почему Gigant?</div>
+      <div class="text">Компания Гигант Компьютерные системы имеет репутацию надёжного и проверенного партнёра, помогающего реализовать сложные проекты для крупных компаний.</div>
+    </div>
+    <div class="about-info">
+      <ul class="about-list">
+        <li>Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.</li>
+        <li>Опыт. Компания присутствует на рынке более 10-ти лет. Мы знаем, как сделать ИТ-проект максимально качественно, быстро и с нужным бюджетом.</li>
+        <li>Процессы. За годы работы наши процессы во многом автоматизированы и отшлифованы. Вас приятно удивит наш сервис.</li>
+        <li>Экосистема. Мы построили множество необходимых связей с различными поставщиками и партнёрами для обеспечения максимального удобства нашим клиентам.</li>
+      </ul>
+      <div class="about-img"><img src="img/img1.png" alt=""></div>
+    </div>
+    
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl5 -->
+<div class="lvl6">
+  <div class="wrapper">
+    <h2 class="h1">Выполненные проекты</h2>
+    <div class="slider-project js-slider-project">
+      <div class="slider">
+        <div class="slide">
+          <div class="project-item">
+            <div class="img">
+              <a href="#"><img src="img/news1.png" alt=""></a>
+            </div>
+            <div class="title"><a href="#">Современная методология разработки позволила расправить крылья</a></div>
+            <div class="link-more">
+              <a href="#">
+                Подробнее
+                <svg class="svg">
+                  <use xlink:href="img/sprite.svg#arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div><!--end project-item -->
+        </div><!--end slide -->
+        <div class="slide">
+          <div class="project-item">
+            <div class="img">
+              <a href="#"><img src="img/news1.png" alt=""></a>
+            </div>
+            <div class="title"><a href="#">Современная методология разработки позволила расправить крылья</a></div>
+            <div class="link-more">
+              <a href="#">
+                Подробнее
+                <svg class="svg">
+                  <use xlink:href="img/sprite.svg#arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div><!--end project-item -->
+        </div><!--end slide -->
+        <div class="slide">
+          <div class="project-item">
+            <div class="img">
+              <a href="#"><img src="img/news1.png" alt=""></a>
+            </div>
+            <div class="title"><a href="#">Современная методология разработки позволила расправить крылья</a></div>
+            <div class="link-more">
+              <a href="#">
+                Подробнее
+                <svg class="svg">
+                  <use xlink:href="img/sprite.svg#arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div><!--end project-item -->
+        </div><!--end slide -->
+        <div class="slide">
+          <div class="project-item">
+            <div class="img">
+              <a href="#"><img src="img/news1.png" alt=""></a>
+            </div>
+            <div class="title"><a href="#">Современная методология разработки позволила расправить крылья</a></div>
+            <div class="link-more">
+              <a href="#">
+                Подробнее
+                <svg class="svg">
+                  <use xlink:href="img/sprite.svg#arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div><!--end project-item -->
+        </div><!--end slide -->
+        <div class="slide">
+          <div class="project-item">
+            <div class="img">
+              <a href="#"><img src="img/news1.png" alt=""></a>
+            </div>
+            <div class="title"><a href="#">Современная методология разработки позволила расправить крылья</a></div>
+            <div class="link-more">
+              <a href="#">
+                Подробнее
+                <svg class="svg">
+                  <use xlink:href="img/sprite.svg#arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div><!--end project-item -->
+        </div><!--end slide -->
+        <div class="slide">
+          <div class="project-item">
+            <div class="img">
+              <a href="#"><img src="img/news1.png" alt=""></a>
+            </div>
+            <div class="title"><a href="#">Современная методология разработки позволила расправить крылья</a></div>
+            <div class="link-more">
+              <a href="#">
+                Подробнее
+                <svg class="svg">
+                  <use xlink:href="img/sprite.svg#arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div><!--end project-item -->
+        </div><!--end slide -->
+      </div>
+      <div class="arr-left">
+        <svg width="24" height="38" viewBox="0 0 24 38"  xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M21 3L5 19L21 35" stroke-width="6"/>
+        </svg>
+
+      </div>
+      <div class="arr-right">
+        <svg width="24" height="38" viewBox="0 0 24 38" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M3 3L19 19L3 35"  stroke-width="6"/>
+        </svg>
+      </div>
+    </div><!--end slider-project -->
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl6 -->
+<div class="lvl7">
+  <div class="wrapper">
+    <div class="director-info">
+      <div class="img"><img src="img/gen-dir.png" alt=""></div>
+      <div class="b-text">
+        <div class="blockquote">
+          <div class="text">«Равным образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании соответствующий условий активизации.»</div>
+          <div class="signature">Генеральный директор, <strong>Семикин Сергей Александрович</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl7 -->
+<div class="lvl8">
+  <div class="wrapper">
+    <h2 class="h1">Наши ключевые партнёры</h2>
+    <div class="slider-part">
+      <div class="slider">
+        <div class="slide">
+          <a href="" class="part"><img src="img/part1.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part2.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part3.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part4.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part5.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part6.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part7.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part4.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part5.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part6.png" alt=""></a>
+        </div><!-- /.slide -->
+        <div class="slide">
+          <a href="" class="part"><img src="img/part7.png" alt=""></a>
+        </div><!-- /.slide -->
+      </div><!-- /.slider -->
+      <div class="arr-left">
+        <svg width="24" height="38" viewBox="0 0 24 38"  xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M21 3L5 19L21 35" stroke-width="6"/>
+        </svg>
+      </div>
+      <div class="arr-right">
+        <svg width="24" height="38" viewBox="0 0 24 38" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M3 3L19 19L3 35"  stroke-width="6"/>
+        </svg>
+      </div>
+    </div><!-- /.slider-part -->
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl8 -->
+<div class="lvl9">
+  <div class="wrapper">
+    <div class="title-box">
+      <h2 class="h1">Новости компании</h2>
+      <div class="link-more b-right"><a href="#">Все <span class="md-hidden">новости</span></a></div>
+    </div>
+    <div class="list-news">
+      <div class="news-item">
+        <div class="news-wrapper">
+          <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+          <div class="title"><a href="#">Знания.
+          </a></div>
+          <div class="text">
+            Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+          </div>
+          <div class="date">12 мая 2022</div>
+        </div>
+      </div><!--end news-item -->
+      <div class="news-item">
+        <div class="news-wrapper">
+        <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+        <div class="title"><a href="#">Заголовок новости
+        </a></div>
+        <div class="text">
+          Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+        </div>
+        <div class="date">12 мая 2022</div>
+          </div>
+      </div><!--end news-item -->
+      <div class="news-item">
+        <div class="news-wrapper">
+          <div class="img"><a href="#"><img src="img/news1.png" alt=""></a></div>
+          <div class="title"><a href="#">Длинный заголовок новости в две строки
+          </a></div>
+          <div class="text">
+            Знания. В нашей команде работают выскоко- квалифицированные инженеры, с подтверждёнными знаниями.
+          </div>
+          <div class="date">12 мая 2022</div>
+        </div>
+      </div><!--end news-item -->
+    </div><!--end list-news -->
+  </div>  <!-- /.wrapper -->
+</div><!-- /.lvl9 -->
+<div class="lvl10">
+  <div class="wrapper">
+    <div class="form-learn-more">
+      <div class="form-learn-more__text">
+        <div class="title">Хотите узнать больше?</div>
+        <div class="text">Заполните форму и наши специалисты бесплатно проконсультируют вас по любым вопросам ИТ-интеграции</div>
+      </div><!--end form-learn-more__text -->
+      <div class="form-learn-more__form">
+        <div class="form-row">
+          <div class="form-col">
+            <div class="inp-group"><input type="text" placeholder="*Как к Вам обращаться" class="input"></div>
+          </div>
+        </div><!--end form-row -->
+        <div class="form-row">
+          <div class="form-col form-col--md-2">
+            <div class="inp-group"><input type="text" placeholder="Телефон" class="input"></div>
+          </div>
+          <div class="form-col form-col--md-2">
+            <div class="inp-group"><input type="text" placeholder="E-mail" class="input"></div>
+          </div>
+        </div><!--end form-row -->
+        <div class="form-row">
+          <div class="form-col">
+            <div class="inp-group"><textarea placeholder="Комментарий" class="input"></textarea></div>
+          </div>
+        </div><!--end form-row -->
+        <div class="form-row">
+          <div class="form-col">
+            <div class="form-bottom">
+              <div class="text-soglasie">
+                <div class="inp-checkbox">
+                  <input id="ck1" type="checkbox">
+                  <label for="ck1">Я согласен на <a href="#">обработку моих персональных данных</a></label>
+                </div>
+              </div>
+              <div class="b-btn">
+                <input type="submit" value="Запросить консультацию" class="btn btn--02">
+              </div>
+            </div>
+          </div>
+        </div><!--end form-row -->
+      </div><!--end form-learn-more__form -->
+    </div><!--end form-learn-more -->
+  </div>
+</div><!--end lvl10 -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

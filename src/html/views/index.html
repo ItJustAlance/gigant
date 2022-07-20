@@ -1,0 +1,19 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<div class="container" style="padding-top: 150px;">
+  <h2>страницы и попапы</h2>
+  <ul>
+    <li><a  href="main.html">Главная</a></li>
+    <li><a  href="news.html">Новости</a></li>
+    <li><a  href="news-item.html">Новость детальная</a></li>
+
+  </ul>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
