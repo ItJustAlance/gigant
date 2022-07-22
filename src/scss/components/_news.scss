@@ -54,10 +54,17 @@
   .tags-listing {
     flex: 1 1 auto;
     display: flex;
-    flex-wrap: wrap;
     font-size: 14px;
     font-weight: 300;
-    margin-bottom: 5px;
+    
+    &__wrapper {
+      display: flex;
+      flex: 1 1 auto;
+      margin-bottom: 5px;
+      overflow: auto;
+      max-width: 830px;
+      margin-right: auto;
+    }
     .tag-item {
       display: flex;
       // max-height: 40px;

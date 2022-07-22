@@ -1,0 +1,159 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header-inside.html').default)(data) %>
+
+<main class="main">
+  <div class="wrapper wrapper--inside content-wrapper">
+    <section class="content">
+      <ul class="crumbs">
+        <li class="crumbs-item"><a href="">Главная</a></li>
+        <li class="crumbs-item"><span>Новости</span></li>
+      </ul>
+      <div class="box-h-title">
+        <h1 class="h1">Контакты</h1>
+      </div>
+      <div class="b-contact">
+        <div class="title">
+          Центральный офис и склад
+        </div>
+        <div class="contact-rows">
+          <ul class="contact-info">
+            <li>
+              <div class="ic">
+                <svg class="svg ic-contact-addr">
+                  <use xlink:href="img/sprite.svg#ic-contact-addr"></use>
+                </svg>
+              </div>
+              <div class="text">
+                <div><strong>Адрес</strong><br>
+                <strong>Офис:</strong> 111024, г. Москва, 2-я ул. Энтузиастов, д. 3<br>
+                <strong>Склад:</strong> г. Москва, Смирновская д. 25 с. 2
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="ic">
+                <svg class="svg ic-contact-time">
+                  <use xlink:href="img/sprite.svg#ic-contact-time"></use>
+                </svg>
+              </div>
+              <div class="text">
+                <div><strong>Время работы:</strong><br>
+                09:00 - 18:00, сб-вс: выходной</div>
+              </div>
+            </li>
+            <li>
+              <div class="ic">
+                <svg class="svg ic-contact-phone">
+                  <use xlink:href="img/sprite.svg#ic-contact-phone"></use>
+                </svg>
+              </div>
+              <div class="text">
+                <div><strong>Телeфон:</strong> +7 (495) 707-77-77</div>
+              </div>
+            </li>
+            <li>
+              <div class="ic">
+                <svg class="svg ic-contact-skype">
+                  <use xlink:href="img/sprite.svg#ic-contact-skype"></use>
+                </svg>
+              </div>
+              <div class="text">
+                <div><strong>Skype:</strong> GcsExpert</div>
+              </div>
+            </li>
+            <li>
+              <div class="ic">
+                <svg class="svg ic-contact-mail">
+                  <use xlink:href="img/sprite.svg#ic-contact-mail"></use>
+                </svg>
+              </div>
+              <div class="text">
+                <div><strong>Email:</strong> <a href="#">info@gigant.pro</a></div>
+              </div>
+            </li>
+          </ul>
+          <div class="contact-map">
+            <img src="img/map1.png" alt="">
+          </div>
+          <div class="contact-imgs">
+            <img src="img/contact1.png" alt="">
+            <img src="img/contact2.png" alt="">
+          </div>
+        </div><!--end contact-rows -->
+      </div><!--end b-contact -->
+      <div class="b-contact">
+        <div class="title">
+          Центральный офис и склад
+        </div>
+        <div class="contact-rows">
+            <ul class="contact-info">
+              <li>
+                <div class="ic">
+                  <svg class="svg ic-contact-addr">
+                    <use xlink:href="img/sprite.svg#ic-contact-addr"></use>
+                  </svg>
+                </div>
+                <div class="text">
+                  <div><strong>Адрес</strong><br>
+                    <strong>Офис:</strong> 111024, г. Москва, 2-я ул. Энтузиастов, д. 3
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ic">
+                  <svg class="svg ic-contact-time">
+                    <use xlink:href="img/sprite.svg#ic-contact-time"></use>
+                  </svg>
+                </div>
+                <div class="text">
+                  <div><strong>Время работы:</strong><br>
+                    09:00 - 18:00, сб-вс: выходной</div>
+                </div>
+              </li>
+              <li>
+                <div class="ic">
+                  <svg class="svg ic-contact-phone">
+                    <use xlink:href="img/sprite.svg#ic-contact-phone"></use>
+                  </svg>
+                </div>
+                <div class="text">
+                  <div>
+                    <strong>Телeфон:</strong> <br>
+                    +7 (495) 707-77-77<br>
+                    +7 (495) 707-77-77
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ic">
+                  <svg class="svg ic-contact-skype">
+                    <use xlink:href="img/sprite.svg#ic-contact-skype"></use>
+                  </svg>
+                </div>
+                <div class="text">
+                  <div><strong>Skype:</strong> GcsExpert</div>
+                </div>
+              </li>
+              <li>
+                <div class="ic">
+                  <svg class="svg ic-contact-mail">
+                    <use xlink:href="img/sprite.svg#ic-contact-mail"></use>
+                  </svg>
+                </div>
+                <div class="text">
+                  <div><strong>Email:</strong> <a href="#">info@gigant.pro</a></div>
+                </div>
+              </li>
+            </ul>
+          <div class="contact-map"><img src="img/map2.png" alt=""></div>
+        </div><!--end contact-rows -->
+      </div><!--end b-contact -->
+    </section>
+  </div>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

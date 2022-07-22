@@ -1,0 +1,194 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header-inside-about.html').default)(data) %>
+
+<main class="main main--header">
+  <div class="main-header header-about">
+    <div class="wrapper wrapper--inside content-wrapper">
+      <div class="main-header__wrapper">
+        <ul class="crumbs">
+          <li class="crumbs-item"><a href="">Главная</a></li>
+          <li class="crumbs-item"><span>Новости</span></li>
+        </ul>
+        <div class="box-h-title">
+          <h1 class="h1">Гигант Компьютерные системы</h1>
+          <div class="h-subtitle">
+            Надёжный поставщик с хорошей историей
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--end main-header -->
+  <div class="wrapper wrapper--inside content-wrapper">
+    <section class="content">
+      <div class="about-info">
+        <div class="about-info__text">
+          <p>Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям! Сложно сказать, почему базовые сценарии поведения пользователей, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу.</p>
+          <p>Сложно сказать, почему стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, представлены в исключительно положительном свете. Принимая во внимание показатели успешности, укрепление и развитие внутренней структуры создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса системы обучения кадров, соответствующей насущным потребностям. Но высокое качество позиционных исследований не оставляет шанса для соответствующих условий.</p>
+        </div>
+        <ul class="about-info__numbers">
+          <li class="about-info-item">
+            <div class="num">11</div>
+            лет на рынке
+          </li>
+          <li class="about-info-item">
+            <div class="num">27</div>
+            инженеров в штате
+          </li>
+          <li class="about-info-item">
+            <div class="num">500</div>
+            квадратов собственный склад
+          </li>
+        </ul>
+      </div><!--end about-info-->
+      <h2 class="h2">История компании</h2>
+      <div class="history-company">
+        <div class="b-tabs">
+          <ul class="tabs">
+            <li>2011</li>
+            <li>2013</li>
+            <li>2016</li>
+            <li>2017</li>
+            <li>2019</li>
+            <li>2021</li>
+          </ul>
+          <div class="box visible">
+            <div class="history-company__content">
+              <div class="history-company__img">
+              
+              </div>
+              <div class="history-company__text">
+                <div class="title">Заголовок</div>
+                <div class="text">Компания Гигант Компьютерные системы имеет репутацию надёжного и проверенного партнёра, помогающего реализовать сложные проекты для крупных компаний.</div>
+              </div>
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div><!--end history-company -->
+      <h2 class="h2">Руководство</h2>
+      <div class="leaders">
+        <div class="leader-big">
+          <div class="leader-item">
+            <div class="img"><img src="img/lead1.png" alt=""></div>
+            <div class="title">Семикин <br>Сергей Александрович
+              </div>
+            <div class="desc">Генеральный директор</div>
+          </div>
+        </div>
+        <div class="leaders-right">
+          <div class="leader-small">
+            <div class="leader-item">
+              <div class="img"><img src="img/lead2.png" alt=""></div>
+              <div class="leader-item__text">
+                <div class="title">Иванов <br>Константин Геннадьевич
+                  </div>
+                <div class="desc">Финансовый директор</div>
+              </div><!--end leader-item__text -->
+            </div>
+          </div><!--end leader-small -->
+          <div class="leader-small">
+            <div class="leader-item">
+              <div class="img"><img src="img/lead3.png" alt=""></div>
+              <div class="leader-item__text">
+                <div class="title">Терентьева <br>Татьяна Сергеевна
+                  </div>
+                <div class="desc">Главнаый бухгалтер</div>
+              </div><!--end leader-item__text -->
+            </div>
+          </div><!--end leader-small -->
+          <div class="leader-small">
+            <div class="leader-item">
+              <div class="img"><img src="img/lead4.png" alt=""></div>
+              <div class="leader-item__text">
+                <div class="title">Иванова <br>Светлана Игоревна
+                  </div>
+                <div class="desc">Финансовый директор</div>
+              </div><!--end leader-item__text -->
+            </div>
+          </div><!--end leader-small -->
+          <div class="leader-small">
+            <div class="leader-item">
+              <div class="img"><img src="img/lead5.png" alt=""></div>
+              <div class="leader-item__text">
+                <div class="title">Петров <br>Иван Вячеславович
+                  </div>
+                <div class="desc">Руководитель IT-отдела</div>
+              </div><!--end leader-item__text -->
+            </div>
+          </div><!--end leader-small -->
+        </div><!--end leaders-right -->
+      </div><!--end leaders -->
+      <div class="b-awards">
+        <h2 class="h2">Награды и сертификаты</h2>
+        <div class="slider-awards">
+          <div class="slider">
+            <div class="slide"><a href=""><img src="img/award1.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award2.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award3.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award4.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award5.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award2.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award3.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award4.png" alt=""></a></div>
+            <div class="slide"><a href=""><img src="img/award5.png" alt=""></a></div>
+          </div>
+        </div><!--end slider-awards-->
+      </div><!--end b-awards -->
+      <div class="about-text">
+        <p>Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям! Сложно сказать, почему базовые сценарии поведения пользователей, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу.</p>
+        <p>Сложно сказать, почему стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, представлены в исключительно положительном свете. Принимая во внимание показатели успешности, укрепление и развитие внутренней структуры создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса системы обучения кадров, соответствующей насущным потребностям. Но высокое качество позиционных исследований не оставляет шанса для соответствующих условий активизации.</p>
+      </div>
+  
+  
+      <div class="form-learn-more form-learn-more--insode">
+        <div class="form-learn-more__text">
+          <div class="title">Хотите узнать больше?</div>
+          <div class="text">Заполните форму и наши специалисты бесплатно проконсультируют вас по любым вопросам ИТ-интеграции</div>
+        </div><!--end form-learn-more__text -->
+        <div class="form-learn-more__form">
+          <div class="form-row">
+            <div class="form-col">
+              <div class="inp-group"><input type="text" placeholder="*Как к Вам обращаться" class="input"></div>
+            </div>
+          </div><!--end form-row -->
+          <div class="form-row">
+            <div class="form-col form-col--md-2">
+              <div class="inp-group"><input type="text" placeholder="Телефон" class="input"></div>
+            </div>
+            <div class="form-col form-col--md-2">
+              <div class="inp-group"><input type="text" placeholder="E-mail" class="input"></div>
+            </div>
+          </div><!--end form-row -->
+          <div class="form-row">
+            <div class="form-col">
+              <div class="inp-group"><textarea placeholder="Комментарий" class="input"></textarea></div>
+            </div>
+          </div><!--end form-row -->
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-bottom">
+                <div class="text-soglasie">
+                  <div class="inp-checkbox">
+                    <input id="ck1" type="checkbox">
+                    <label for="ck1">Я согласен на <a href="#">обработку моих персональных данных</a></label>
+                  </div>
+                </div>
+                <div class="b-btn">
+                  <input type="submit" value="Запросить консультацию" class="btn btn--02">
+                </div>
+              </div>
+            </div>
+          </div><!--end form-row -->
+        </div><!--end form-learn-more__form -->
+      </div><!--end form-learn-more -->
+    </section>
+  </div>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

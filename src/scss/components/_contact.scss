@@ -1,0 +1,91 @@
+.b-contact {
+  font-size: 16px;
+  &+.b-contact {
+    margin-top: 70px;
+  }
+  .title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 30px;
+    &:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 15px;
+      left: 0;
+      background: $clr-first-primary;
+    }
+  }
+  .contact-rows {
+    margin: 0 -15px;
+    display: flex;
+    @include qlg {
+      flex-wrap: wrap;
+    }
+    .contact-info {
+      padding: 0 15px;
+      width: 44%;
+      max-width: 520px;
+      min-width: 44%;
+      @include qlg {
+        width: 100%;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+      }
+      li {
+        position: relative;
+        display: flex;
+        margin-bottom: 30px;
+        .text {
+          display: flex;
+          align-items: center;
+          
+        }
+        .ic {
+          margin-right: 27px;
+          background: #F3F4FB;
+          width: 42px;
+          min-width: 42px;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .svg {
+            width: 26px;
+            height: 26px;
+            fill: none;
+            stroke: #747894;
+          }
+          .ic-contact-skype {
+            fill: #747894;
+          }
+        }
+      }
+    }
+    .contact-map {
+      padding: 0 15px;
+      flex: 1 1 auto;
+      margin-bottom: 30px;
+      @include qlg {
+        width: 100%;
+      }
+    }
+    .contact-imgs {
+      padding: 0 15px;
+      min-width: 257px;
+      max-width: 257px;
+      @media(max-width: 1024px){
+        display: none;
+      }
+      img {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
