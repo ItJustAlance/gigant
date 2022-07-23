@@ -1,0 +1,97 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header-inside.html').default)(data) %>
+
+<main class="main">
+  <div class="wrapper wrapper--inside content-wrapper">
+    <section class="content">
+      <ul class="crumbs">
+        <li class="crumbs-item"><a href="">Главная</a></li>
+        <li class="crumbs-item"><span>Новости</span></li>
+      </ul>
+      <div class="box-h-title">
+        <h1 class="h1">Xerox</h1>
+      </div>
+      <div class="partner-info clearfix">
+        <div class="img"><img src="img/partner-big.svg" alt=""></div>
+        <div class="text">
+          <p>Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы своевременно верифицированы. Господа, консультация с широким активом в значительной степени обусловливает важность приоретизации разума над эмоциями.</p>
+          <p>Противоположная точка зрения подразумевает, что многие известные личности, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. Наше дело не так однозначно, как может показаться: глубокий уровень погружения представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+          
+         
+        </div>
+      </div>
+      
+      <article>
+        <h2 class="h2">Вам также будет интересно</h2>
+        <p>Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы своевременно верифицированы. Господа, консультация с широким активом в значительной степени обусловливает важность приоретизации разума над эмоциями. Противоположная точка зрения подразумевает, что многие известные личности, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. Наше дело не так однозначно, как может показаться: глубокий уровень погружения представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+        <h3 class="h3">Вам также будет интересно</h3>
+        <ul>
+          <li>Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы своевременно верифицированы.</li>
+          <li>Господа, консультация с широким активом в значительной степени обусловливает важность приоретизации разума над эмоциями.</li>
+          <li>Противоположная точка зрения подразумевает, что многие известные личности, превозмогая сложившуюся непростую экономическую ситуацию</li>
+          <li>Призваны к ответу. Наше дело не так однозначно, как может показаться: глубокий уровень погружения представляет собой интересный эксперимент проверки дальнейших направлений развития.</li>
+        </ul>
+        <h2 class="h2">Продукты партнёра</h2>
+        <div class="market-list">
+          <div class="market-item">
+            <div class="market-wrap">
+              <div class="img">
+                <a href="#"> <img src="img/market-item.png" alt=""></a>
+                <ul class="badgets">
+                  <li><span>Хит</span></li>
+                  <li class="blue"><span>новинка</span></li>
+                  <li class="pink"><span>Скидка 10%</span></li>
+                </ul>
+              </div>
+              <div class="market-item__body">
+                <div class="articul">Арт. 1112234</div>
+                <div class="title"><a href="">Разнообразный и богатый опыт </a></div>
+                <div class="desc">Знания. В нашей команде работают выскоко- квалифицированные инженеры</div>
+              </div>
+              <div class="market-item__bottom">
+                <div class="old-cost">32 985 ₽</div>
+                <div class="cost">32 985 ₽</div>
+              </div>
+            </div><!-- /.market-wrap -->
+          </div><!-- /.market-item -->
+          <div class="market-item">
+            <div class="market-wrap">
+              <div class="img"><a href=""><img src="img/market-item.png" alt=""></a></div>
+              <div class="market-item__body">
+                <div class="articul">Арт. 1112234</div>
+                <div class="title"><a href="">Разнообразный и богатый опыт </a></div>
+                <div class="desc">Знания. В нашей команде работают выскоко- квалифицированные инженеры</div>
+              </div>
+              <div class="market-item__bottom">
+                <div class="old-cost">32 985 ₽</div>
+                <div class="cost">32 985 ₽</div>
+              </div>
+            </div><!-- /.market-wrap -->
+          </div><!-- /.market-item -->
+          <div class="market-item">
+            <div class="market-wrap">
+              <div class="img"><a href=""><img src="img/market-item.png" alt=""></a></div>
+              <div class="market-item__body">
+                <div class="articul">Арт. 1112234</div>
+                <div class="title"><a href="">Разнообразный и богатый опыт </a></div>
+                <div class="desc">Знания. В нашей команде работают выскоко- квалифицированные инженеры</div>
+              </div>
+              <div class="market-item__bottom">
+                <div class="cost cost-black">32 985 ₽</div>
+              </div>
+            </div><!-- /.market-wrap -->
+          </div><!-- /.market-item -->
+          <div class="market-list-load">
+            <a href="#" class="btn btn--second">Загрузить еще</a>
+          </div>
+        </div>
+    </section>
+  </div>
+</main>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

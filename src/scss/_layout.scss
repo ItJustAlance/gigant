@@ -212,7 +212,7 @@ body {
 
 .content-wrapper {
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   @include qxl {
     flex-wrap: wrap;
   }
@@ -247,6 +247,7 @@ body {
   &-header {
     padding-top: 145px;
     height: 650px;
+    margin-bottom: 50px;
     .wrapper--inside {
       max-width: 1454px;
     }
@@ -255,6 +256,14 @@ body {
     }
     &.header-about {
       background: url(../img/bg-about.svg) 50% 50% no-repeat;
+      background-size: cover;
+    }
+    &.header-project {
+      background: url(../img/bg-project.svg) 50% 50% no-repeat;
+      background-size: cover;
+    }
+    &.header-partner {
+      background: url(../img/bg-partner.svg) 50% 50% no-repeat;
       background-size: cover;
     }
     
@@ -322,7 +331,12 @@ body {
     &:hover svg {
       opacity: 1;
     }
-    &.active, &:hover {
+    &:hover {
+      background: #F3F4FB;
+      text-decoration: none;
+      border-color: #D8D8E9;
+    }
+    &.active {
       background: $clr-first-primary;
       color: #fff;
       text-decoration: none;

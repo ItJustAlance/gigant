@@ -27,13 +27,49 @@ $(function() {
         if (scroll >= 100) sticky.addClass('sticky');
         else sticky.removeClass('sticky');
     });
+    $('.slider-awards .slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: $('.slider-awards .arr-left'),
+        nextArrow: $('.slider-awards .arr-right'),
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 667,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            },
+        ]
+    });
     $('.slider-project .slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         prevArrow: $('.slider-project .arr-left'),
         nextArrow: $('.slider-project .arr-right'),
         responsive: [
@@ -59,7 +95,7 @@ $(function() {
         slidesToShow: 7,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         dots: false,
         //variableWidth: true,
         arrows: true,
@@ -122,7 +158,29 @@ $(function() {
     $(".js-drop-btn").on("click", function (){
         $(this).parent().toggleClass("active")
         $(this).next().slideToggle();
-        
     })
-    /** finish modals ***/
+    
+    
+    /***** ТАБЫ START *******/
+    
+    $('ul.tabs').delegate('li:not(.current)', 'click', function() {
+        $(this).addClass('current').siblings().removeClass('current')
+            .parents('div.b-tabs').find('div.box').eq($(this).index()).fadeIn(0).siblings('div.box').fadeOut(0);
+    })
+    $(".js-tab-prev").on("click", function() {
+        let index =  $(this).closest(".js-tab-wrapper").find('.js-tab-items .current').index() - 1;
+        $(this).closest(".js-tab-wrapper").find('li').removeClass("current");
+        $(this).closest(".js-tab-wrapper").find('.js-tab-items li').eq(index).addClass("current");
+        $(this).closest(".js-tab-wrapper").find('div.box').eq(index).fadeIn(0).siblings('div.box').fadeOut(0);
+    });
+    $(".js-tab-next").on("click", function() {
+        let index =  $(this).closest(".js-tab-wrapper").find('.js-tab-items .current').index() + 1;
+        let total = $(this).closest(".js-tab-wrapper").find('li').length;
+        if((total) == index){
+          index = 0;
+        }
+        $(this).closest(".js-tab-wrapper").find('li').removeClass("current");
+        $(this).closest(".js-tab-wrapper").find('.js-tab-items li').eq(index).addClass("current");
+        $(this).closest(".js-tab-wrapper").find('div.box').eq(index).fadeIn(0).siblings('div.box').fadeOut(0);
+    });
 });

@@ -36,6 +36,7 @@
 .box-filter {
   display: flex;
   padding-bottom: 30px;
+  max-width: 1200px;
   @include qlg {
     flex-wrap: wrap;
   }
@@ -56,14 +57,23 @@
     display: flex;
     font-size: 14px;
     font-weight: 300;
-    
+    max-width: 1200px;
+    flex-wrap: wrap;
+    @include qlg {
+      flex-wrap: nowrap;
+    }
     &__wrapper {
       display: flex;
       flex: 1 1 auto;
       margin-bottom: 5px;
-      overflow: auto;
-      max-width: 830px;
+      max-width: 1200px;
+      flex-wrap: wrap;
       margin-right: auto;
+      @include qlg {
+        overflow: auto;
+        max-width: 830px;
+        flex-wrap: nowrap;
+      }
     }
     .tag-item {
       display: flex;
